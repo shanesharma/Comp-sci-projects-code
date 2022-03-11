@@ -1,0 +1,163 @@
+// initiates all the lists
+var sortList = [];
+var stateName = getColumn("US States", "State Name");
+var randomNum;
+var chosenState = [];
+var codeName = getColumn("US States", "Code Name");
+var nickName = getColumn("US States", "Nickname");
+var householdIncome = getColumn("US States", "Median Household Income");
+var stateArea = getColumn("US States", "Area");
+var statePopulation = getColumn("US States", "Population");
+var sortHouseholdIncome = [];
+var sortStateArea = [];
+var sortStatePopulation = [];
+var sortCodeName = [];
+var sortNickName = [];
+var chosenHouseholdIncome = [];
+var chosenStateArea = [];
+var chosenStatePopulation = [];
+var chosenCodeName = [];
+var chosenNickName = [];
+var num;
+// creates the buttonx that make the user navigate to screens
+onEvent("letsgetstartedbutton","click", function( ){
+  setScreen("Regionscreen");
+  playSound("sound://category_achievements/lighthearted_bonus_objective_1.mp3", false);
+  
+});
+
+onEvent("A-Ibutton","click", function( ){
+  playSound("sound://category_bell/choose_background.mp3", false);
+  setScreen("randomState");
+  for(var i = 0; i < stateName.length; i++){
+    if(stateName[i].substring(0,1) == "A" || stateName[i].substring(0,1) == "B" || stateName[i].substring(0,1) == "C" || stateName[i].substring(0,1) == "D" || stateName[i].substring(0,1) == "E" || stateName[i].substring(0,1) == "F" || stateName[i].substring(0,1) == "G" || stateName[i].substring(0,1) == "H" || stateName[i].substring(0,1) == "I" ){
+      appendItem(sortList, stateName[i]);
+      num = stateName.indexOf(stateName[i]);
+      appendItem(sortCodeName, codeName[num]);
+      appendItem(sortNickName, nickName[num]);
+      appendItem(sortHouseholdIncome, householdIncome[i]);
+      appendItem(sortStateArea, stateArea[i]);
+      appendItem(sortStatePopulation, statePopulation[i]);
+    }
+  }
+  randomNum = randomNumber(0, sortList.length);
+  chosenState = sortList[randomNum];
+  chosenCodeName = sortCodeName[randomNum];
+  chosenNickName = sortNickName[randomNum];
+  chosenStatePopulation = sortStatePopulation[randomNum];
+  chosenStateArea = sortStateArea[randomNum];
+  chosenHouseholdIncome = sortHouseholdIncome[randomNum];
+    
+  console.log(chosenState);
+  setProperty("stateNameDisplay" , "text" ,"State name: " + chosenState + "\nNickname: " + chosenNickName + "\nCode name: " + chosenCodeName);
+});
+onEvent("K-Mbutton","click", function( ){
+  setScreen("randomState");
+  playSound("sound://category_bell/choose_background.mp3", false);
+  for(var i = 0; i < stateName.length; i++){
+    if(stateName[i].substring(0,1) == "J" || stateName[i].substring(0,1) == "K" || stateName[i].substring(0,1) == "L" || stateName[i].substring(0,1) == "M" ){
+      appendItem(sortList, stateName[i]);
+      num = stateName.indexOf(stateName[i]);
+      appendItem(sortCodeName, codeName[num]);
+      appendItem(sortNickName, nickName[num]);
+      appendItem(sortHouseholdIncome, householdIncome[i]);
+      appendItem(sortStateArea, stateArea[i]);
+      appendItem(sortStatePopulation, statePopulation[i]);
+    }
+  }
+  randomNum = randomNumber(0, sortList.length);
+  chosenState = sortList[randomNum];
+  chosenCodeName = sortCodeName[randomNum];
+  chosenNickName = sortNickName[randomNum];
+  chosenStatePopulation = sortStatePopulation[randomNum];
+  chosenStateArea = sortStateArea[randomNum];
+  chosenHouseholdIncome = sortHouseholdIncome[randomNum];
+    
+  console.log(chosenState);
+  setProperty("stateNameDisplay" , "text" ,"State name: " + chosenState + "\nNickname: " + chosenNickName + "\nCode name: " + chosenCodeName);
+  
+});
+onEvent("N-Pbutton","click", function( ){
+  setScreen("randomState");
+  playSound("sound://category_bell/choose_background.mp3", false);
+  for(var i = 0; i < stateName.length; i++){
+    if(stateName[i].substring(0,1) == "N" || stateName[i].substring(0,1) == "O" || stateName[i].substring(0,1) == "P"){
+      appendItem(sortList, stateName[i]);
+      num = stateName.indexOf(stateName[i]);
+      appendItem(sortCodeName, codeName[num]);
+      appendItem(sortNickName, nickName[num]);
+      appendItem(sortHouseholdIncome, householdIncome[i]);
+      appendItem(sortStateArea, stateArea[i]);
+      appendItem(sortStatePopulation, statePopulation[i]);
+    }
+  }
+  randomNum = randomNumber(0, sortList.length);
+  chosenState = sortList[randomNum];
+  chosenCodeName = sortCodeName[randomNum];
+  chosenNickName = sortNickName[randomNum];
+  chosenStatePopulation = sortStatePopulation[randomNum];
+  chosenStateArea = sortStateArea[randomNum];
+  chosenHouseholdIncome = sortHouseholdIncome[randomNum];
+    
+  console.log(chosenState);
+  setProperty("stateNameDisplay" , "text" ,"State name: " + chosenState + "\nNickname: " + chosenNickName + "\nCode name: " + chosenCodeName);
+  
+});
+onEvent("R-Wbutton","click", function( ){
+  setScreen("randomState");
+  playSound("sound://category_bell/choose_background.mp3", false);
+  for(var i = 0; i < stateName.length; i++){
+    if(stateName[i].substring(0,1) == "R" || stateName[i].substring(0,1) == "S" || stateName[i].substring(0,1) == "T" || stateName[i].substring(0,1) == "U" || stateName[i].substring(0,1) == "V" || stateName[i].substring(0,1) == "W" ){
+      appendItem(sortList, stateName[i]);
+      num = stateName.indexOf(stateName[i]);
+      appendItem(sortCodeName, codeName[num]);
+      appendItem(sortNickName, nickName[num]);
+      appendItem(sortHouseholdIncome, householdIncome[i]);
+      appendItem(sortStateArea, stateArea[i]);
+      appendItem(sortStatePopulation, statePopulation[i]);
+    }
+  }
+  randomNum = randomNumber(0, sortList.length);
+  chosenState = sortList[randomNum];
+  chosenCodeName = sortCodeName[randomNum];
+  chosenNickName = sortNickName[randomNum];
+  chosenStatePopulation = sortStatePopulation[randomNum];
+  chosenStateArea = sortStateArea[randomNum];
+  chosenHouseholdIncome = sortHouseholdIncome[randomNum];
+    
+  console.log(chosenState);
+  setProperty("stateNameDisplay" , "text" ,"State name: " + chosenState + "\nNickname: " + chosenNickName + "\nCode name: " + chosenCodeName);
+  
+});
+onEvent("BacktoregionButton","click", function( ){
+  playSound("sound://category_alerts/cartoon_negative_bling.mp3", false);
+  setScreen("Regionscreen");
+  clearList();
+});
+
+// clears the list to keep the code clean and prevent area
+function clearList(){
+  sortHouseholdIncome = [];
+  sortStateArea = [];
+  sortStatePopulation = [];
+  sortCodeName = [];
+  sortNickName = [];
+  chosenHouseholdIncome = [];
+  chosenStateArea = [];
+  chosenStatePopulation = [];
+  chosenCodeName = [];
+  chosenNickName = [];
+  sortList = [];
+  chosenState = [];
+}
+onEvent("InterestingFactsButton", "click", function( ) {
+  playSound("sound://category_bell/quriky_trill_bling_positive.mp3", false);
+  setScreen("InterestingFactsPage");
+  setProperty("interestingfactstitle","text", "The state that you have selected is " + chosenState);
+  setProperty("interestingfactstext", "text", "Some interesting facts about your state: " + chosenState + "\nState Population: " + chosenStatePopulation + "\n State Area (size): " + chosenStateArea + "\nAverage household income: " + chosenHouseholdIncome);
+});
+onEvent("homebutton","click", function( ){
+  playSound("sound://category_alerts/cartoon_negative_bling.mp3", false);
+  setScreen("Regionscreen");
+  clearList();
+});
