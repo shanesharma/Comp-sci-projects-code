@@ -1,0 +1,157 @@
+
+setScreen("homeScreen");
+playSound("Nav---Myself-(Clean).mp3");
+onEvent("winningButton", "click", function( ) {
+  setScreen("winningScreen");
+});
+onEvent("playButton", "click", function( ) {
+  setScreen("gameScreen");
+  stopSound("Nav---Myself-(Clean).mp3");
+});
+onEvent("lose1", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose2", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose3", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose4", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose5", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose6", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose7", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose8", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose9", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose10", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose11", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose12", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose13", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose14", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose15", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose16", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose17", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose18", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose19", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose20", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose21", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose22", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose23", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose24", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose25", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose26", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose27", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose28", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose29", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose30", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose31", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose32", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose33", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose34", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose35", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose36", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose37", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose38", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose39", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose40", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose41", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose42", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose43", "click", function( ) {
+setScreen("loseScreen");
+});
+onEvent("lose44", "click", function( ) {
+setScreen("loseScreen");
+});
+// did you see nav for main page
+// champion for winning 
+// I dont care for losing screen
+onEvent("backButton1", "click", function( ) {
+  setScreen("homeScreen");
+});
+onEvent("button3", "click", function( ) {
+  setScreen("screen1");
+});
+onEvent("restartButton", "click", function( ) {
+  setScreen("homeScreen");
+});
+onEvent("backToGame", "click", function( ) {
+  setScreen("gameScreen");
+});
