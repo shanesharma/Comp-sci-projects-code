@@ -1,0 +1,49 @@
+var budget;
+var item = [];
+var price = [];
+setScreen("screen2");
+onEvent("button1", "click", function( ) {
+budget = getNumber("budget");
+setScreen("screen1");
+});
+onEvent("button2", "click", function( ) {
+budget = getNumber("budget");
+appendItem(item, getText("item"));
+appendItem(price, getNumber("price"));
+updateScreen();
+});
+// this function checks to see if the budget is still higher than the total price of the item
+function budgetCheck(budgets, prices) {
+for(var i = 0; i < prices.length; i++){
+if(budgets> prices[i]){
+budgets = budgets - prices[i];
+}
+else if(budgets <= prices[i]){
+return 0;
+}
+}
+if(budgets == prices[i]){
+return budgets;
+}
+else{
+return budgets;
+}
+}
+// this function takes the budget check function and uses it as a check, also provides the output
+for what is seen on screen
+function updateScreen() {
+var a = budgetCheck(budget, price);
+if (a != 0){
+for(var i = 0; i < item.length; i++){
+setProperty("price" + i , "text", price[i]);
+setProperty("item" + i , "text", item[i]);
+setProperty("text_area1", "text", "You have $" + budgetCheck(budget, price) + " left to
+spend");
+
+}
+}
+if(a == 0){
+setProperty("text_area1", "text", "You have $" + budgetCheck(budget, price) + " and cannot
+purchase any more items");
+}
+}
